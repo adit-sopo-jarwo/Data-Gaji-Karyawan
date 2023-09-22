@@ -244,7 +244,7 @@ public class Data_Karyawan extends javax.swing.JFrame {
 
     private void btnProsesGajiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProsesGajiActionPerformed
         // TODO add your handling code here:
-        int A, B, C;
+        int A, B;
         A = Integer.parseInt(txtKerja.getText());
           if(A > 10){
               B = 20000000;
@@ -263,7 +263,8 @@ public class Data_Karyawan extends javax.swing.JFrame {
         B = Integer.parseInt(txtGaji.getText());
         if (B >= 10000000){
            A = (int) (B * 0.11);
-        }
+        } else {
+            A = B * 1;
         txtPph.setText(""+A);
     }//GEN-LAST:event_btnProsesPphActionPerformed
 
